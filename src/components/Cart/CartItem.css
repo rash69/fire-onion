@@ -1,0 +1,20 @@
+.cart-item{
+  padding: 5px 0px;
+  margin: 5px 0px;
+  border-radius: 5px;
+}
+
+.cart-item-title{
+  font-size: 14px;
+  font-weight: 900;
+  padding-top: 10px;
+}
+
+.cart-item-quantity{
+  width: 35px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: white;
+  border: none;
+  
+}

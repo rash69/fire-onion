@@ -1,0 +1,27 @@
+.navbar-brand{
+    padding: 0px;
+}
+
+.navbar h5{
+    text-decoration: none; 
+    color: black;
+    margin: 0px 5px;
+    padding: 10px 20px;
+    
+}
+.h5{
+    text-decoration: none;
+}
+.bold{
+    background-color: rgb(173, 22, 22);
+    border-radius: 25px;
+    
+}
+
+.navbar-brand{
+    width: 20%;
+}
+.navbar h5:hover{
+    color: grey;
+}
+
