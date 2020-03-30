@@ -8,8 +8,8 @@
   }
   .orders-items-aria {
     max-height: 345px;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    overflow-y: scroll; /* Add vertical scrollbar */
+    overflow-x: hidden; 
+    overflow-y: scroll; 
   }
   .place-order-btn-disable {
     background: gray;

@@ -22,7 +22,7 @@ const FeaturingData = [
 		'title': "A Good auto responder",
 		'img': Chef,
 		'info': "Keep Your Systems in sync with automated web hook based notifications",
-		'label': "The first dish known to have been deep fried was fritters, which were popular in the European Mi...",
+		'label': "The first dish known to have been deep fried was fritters, which were...",
 		'description': "The first dish known to have been deep fried was fritters, which were popular in the European Middle Ages. However, it was the Scottish who were the first Europeans to deep fry their chicken in fat (though without seasoning). Meanwhile, a number of West African peoples had traditions of seasoned fried chicken (though battering and cooking the chicken in palm oil). Scottish frying techniques and West African seasoning techniques were combined by enslaved Africans and African-Americans in the American South.",
 		'size': "large",
 		'icon': chef,

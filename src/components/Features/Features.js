@@ -1,14 +1,14 @@
 import React from 'react';
-
+import './Features.css'
 const Features = ({item}) => {
     const {title, label, img, icon} = item;
     return (
-        <div className="col-xl-4">
+        <div className="col-md-4">
     <div className="single-item pb-3">
         <div className="card">
             <img className="card-img-top" src={img} alt=""/>
-            <div className="card-body choose-aria-content d-flex">
-            <div className="choose-aria-icon w-75">
+            <div className="card-body choose-area-content d-flex">
+            <div className="choose-area-icon w-25">
             <img src={icon} alt=""/>
          </div>    
                 <div>
@@ -25,6 +25,3 @@ const Features = ({item}) => {
 
 export default Features;
 
-//<div className="choose-aria-icon">
-// <img src={icon} alt=""/>
-// </div>

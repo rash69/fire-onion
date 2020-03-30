@@ -22,7 +22,7 @@ const ItemDetails = (props) => {
     }
   }
 
-  console.log(product);
+  // console.log(product);
   
   const cartHandler = item => {
     // console.log(id);

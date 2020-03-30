@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import InputItem from '../InputItem/InputItem';
-import './SignUp.css'
+import './SignUp.css';
+import logo from '../../../images/Others/logo2.png';
 import { Link, Redirect } from 'react-router-dom';
 import { UserContext } from '../useAuth';
 
@@ -62,7 +63,7 @@ const SignUp = (props) => {
       <div className="row">
         <div className="col-md-4 col-md-offset-3 m-auto">
           <div className="sign-up-area-logo py-5 m-auto">
-            <img className="w-50 d-block m-auto" src="https://i.ibb.co/Snjf3fp/logo2.png" alt=""/>
+            <img className="w-50 d-block m-auto" src={logo} alt=""/>
           </div>
           <form onSubmit={registerUser}>
             <InputItem name="name" type="text" placeholder="Name" onchangeHandler={onchangeHandler} value={name} />

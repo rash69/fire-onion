@@ -1,0 +1,12 @@
+.choose-area-content {
+	justify-content: space-evenly;
+	padding: 0;
+	margin-top: 25px;
+}
+
+.choose-area-content div h5.card-title {
+	text-transform: capitalize;
+}
+.choose-area-content p {
+	font-size: 12px;
+}

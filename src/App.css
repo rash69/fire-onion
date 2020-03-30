@@ -20,18 +20,6 @@ input:focus {
 	border:none;
 }
 
-.primary-btn {
-  background: #e51a4b;
-  color: #fff;
-  border-radius: 30px;
-  padding: 7px 25px;
-  font-size: 18px;
-}
-.primary-btn:hover {
-  
-  color: #fff !important;
-  
-}
 .single-item {
   transition: .5s;
   cursor: pointer;
@@ -70,36 +58,3 @@ input:focus {
 }
 
 
-/* why choose us aria section start */
-.choose-aria-content {
-	justify-content: space-evenly;
-	padding: 0;
-	margin-top: 25px;
-}
-.choose-aria-icon {
-	width: 30%;
-	margin: 0 10px;
-}
-.choose-aria-content div h5.card-title {
-	text-transform: capitalize;
-}
-.choose-aria-content p {
-	font-size: 12px;
-}
-.disabled {
-  background-color:rgb(128, 128, 128);
-  color: #fff;
-  cursor: not-allowed;
-}
-/* why choose us aria section end */
-.delivery-details  {
-  border-bottom: 1px solid gray;
-  margin-bottom: 25px;
-}
-p.see-all {
-  cursor: pointer;
-  transition: .3s;
-}
-p.see-all:hover {
-  border-bottom: 1px solid salmon;
-}

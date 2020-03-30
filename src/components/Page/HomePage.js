@@ -5,7 +5,6 @@ import Features from '../Features/Interest'
 import Footer from '../Footer/Footer';
 
 
-
 const HomePage = () => {
   return (
     <>
@@ -13,7 +12,6 @@ const HomePage = () => {
       <Menu/>
       <Features/>
       <Footer/>
-      
     </>
   );
 };

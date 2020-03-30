@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import './Login.css'
+import logo from '../../../images/Others/logo2.png';
 import InputItem from '../InputItem/InputItem';
 import { Link, withRouter, Redirect } from 'react-router-dom';
 import { UserContext } from '../useAuth';
@@ -27,7 +28,7 @@ const Login = (props) => {
 
   const loginUser = e => {
     e.preventDefault()
-  console.log(email, password);
+  // console.log(email, password);
   
     auth.login(email, password)
     .then(res => {
@@ -53,7 +54,7 @@ const Login = (props) => {
       <div className="row">
         <div className="col-md-4 col-md-offset-3 m-auto">
           <div className="login-area-logo py-5 m-auto">
-            <img className="w-50 d-block m-auto" src="https://i.ibb.co/Snjf3fp/logo2.png" alt=""/>
+            <img className="w-50 d-block m-auto" src={logo} alt=""/>
           </div>
           <form onSubmit={loginUser}>
             <InputItem name="email" type="email" onchangeHandler={onchangeHandler} placeholder="Email" value={email} />

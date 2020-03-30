@@ -56,7 +56,7 @@ if(cart.length === 0) {
   return (
     <div className="container pt-5 mt-5 text-center">
       <h1 className="text-center">You have no item</h1>
-        <Link to="/foods" className="text-danger">See our foods.</Link>
+        <Link to="/menu" className="text-danger">See our foods.</Link>
     </div>
   )
 }
@@ -103,7 +103,7 @@ const handleSubmit = e => {
         </div>
         <div className="col-md-5 f-right">
           <div className="final-order-aria">
-            <h5 className="restaurant-name">From <span>Gulshan Plazza GPR</span> </h5>
+            <h5 className="restaurant-name">From <span>Chef's Table</span> </h5>
             <h6>Arriving in 20-30 minutes</h6>
             <div className="orders-items-aria">
 

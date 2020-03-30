@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { UserContext } from '../auth/useAuth';
+import Person from '../../images/ICON/Group 2.png';
 
 const UserProfile = () => {
 
@@ -7,7 +8,7 @@ const UserProfile = () => {
   const [updateUser, setUpdateUser] =useState(null)
   const [loading, setLoading] =useState(true)
   useEffect(()=>{
-    console.log(user);
+    // console.log(user);
     if(user) {
     getUserProfile(user)
     .then(res => {
@@ -23,7 +24,7 @@ const UserProfile = () => {
 {loading ? <h1 className="card-text text-center mt-5 pt-5">Loading ......</h1> : (
       <div className="container">
         <div className="card border-primary m-auto d-block">
-          <img className="card-img-top w-25 d-block m-auto" src="https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png" alt="" />
+          <img className="card-img-top w-25 d-block m-auto" src={Person} alt="" />
           <div className="card-body">
             <h4 className="card-title text-center">{updateUser && updateUser.name}</h4>
             <p className="card-text text-center">{user.email}</p>

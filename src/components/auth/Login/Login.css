@@ -1,23 +1,23 @@
-.login-btn {
+.login-btn{
     background-color: #F91944;
     color: #fff;
     padding: 10px 0;
   }
-  .login-btn:hover {
-   
+
+.login-btn:hover{
     color: #fff;
-    
-  }
+}
   
-  .no-account a {
+.no-account a{
     color: #F91944;
-  }
+}
+
 .login{
     background: url('../../../images/Others/signup-bg.png');
     background-repeat: no-repeat;
     width: 100%;
-      height: 550px;
-      background-position: center center;
+    height: 550px;
+    background-position: center center;
     background-size: cover;
     margin-top: 5%;
-  }
+}

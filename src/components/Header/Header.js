@@ -14,16 +14,16 @@ const LoginUser = ({route}) => {
     }
     return (
         <>
-            <Link to="/user/profile"><h5 className="nav-item bold" href="/" >Profile</h5></Link>
-            <h5 className="nav-item" href="/" onClick={logOutHandler}>Logout</h5>
+            <Link to="/user/profile"><button className="nav-item btn btn-danger" href="/" >Profile</button></Link>
+            <button className="nav-item btn btn-dark" href="/" onClick={logOutHandler}>Logout</button>
         </>
     )
 }
 const LogoutUser = () => {
     return (
         <>
-            <Link to="/login"><h5 className="nav-item" href="/">Login</h5></Link>
-            <Link to="/signup"><h5 className="nav-item bold" href="/">Sign up</h5></Link>
+            <Link to="/login"><button className="nav-item btn btn-primary" href="/">Login</button></Link>
+            <Link to="/signup"><button className="nav-item btn btn-danger" href="/">Sign up</button></Link>
            
         </>
     )
@@ -50,10 +50,10 @@ const Header = (props) => {
             
             <div className="navbar-nav flex-row">                  
                 <Link to="/cart">  
-                <h5 className="nav-item" href="/"> 
+                <button className="nav-item" href="/"> 
                 <i className="fa fa-cart-plus" area-hidden="true">
                 </i> <span style={{color:'red'}}> {cart && cartItem}</span>
-                </h5></Link>
+                </button></Link>
                 {user ? <LoginUser route={props} /> : <LogoutUser/>}    
             </div>
         </nav>
