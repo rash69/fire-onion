@@ -7,14 +7,13 @@ const CartItem = ({item}) => {
   const {calculateQuantity} = useContext(UserContext)
 
   const {img, recipe_name, proTotalPrice, quantity} =item;
-  const sortTitle = recipe_name.slice(0,5)
   return (
     <div className="row cart-item">
       <div className="col-3">
         <img src={img} className="w-100" alt="" />
       </div>
       <div className="col-6">
-        <div className='cart-item-title'>{sortTitle}</div>
+        <div className='cart-item-title'>{recipe_name}</div>
         <div>${proTotalPrice.toFixed(2)}</div>
       </div>
      

@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import Features from './Features';
-import FeaturingData from '../../Data/Features';
+
 const Interest = () => {
     const [chooseItems, setChooseItems] = useState([])
   useEffect(()=> {
-    setChooseItems(FeaturingData)
+      fetch('https://blooming-river-69896.herokuapp.com/features')
+      .then(res => res.json())
+      .then( data =>{
+        setChooseItems(data)
+      })
+    
   },[])
     return (
         <section className="why-choose-us py-5">

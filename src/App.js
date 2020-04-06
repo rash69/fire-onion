@@ -14,6 +14,10 @@ import UserProfile from './components/Page/UserProfile';
 import PrivateRoute from './components/PrivateRoute';
 import Checkout from './components/Cart/Checkout';
 import Menu from './components/Menu/Menu';
+import Inventory from './components/Page/Inventory';
+import NewFeatures from './components/Page/NewFeatures';
+import OrderHistory from './components/Page/OrderHistory';
+
 
 function App() {
   return (
@@ -21,6 +25,15 @@ function App() {
     <Header/>
     <Switch>
       <Route exact path="/" component={HomePage} />
+      <Route path="/inventory">
+      <Inventory></Inventory>
+      </Route>
+      <Route path="/addFeatures">
+      <NewFeatures></NewFeatures>
+      </Route>
+      <Route path="/orders">
+      <OrderHistory></OrderHistory>
+      </Route>
       <Route path="/signup" component={SignUp} />  
       <Route path="/login" component={Login} />
       <PrivateRoute path="/cart">

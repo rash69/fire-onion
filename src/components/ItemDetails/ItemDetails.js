@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import './ItemDetails.css'
 import { useParams, Link } from 'react-router-dom';
-import data from '../../Data/Data';
 import { UserContext } from '../auth/useAuth';
 
 const ItemDetails = (props) => {
@@ -11,8 +10,12 @@ const ItemDetails = (props) => {
   const [product, setProduct] = useState(null)
 
   useEffect(()=>{
-    const food = data.filter(item => item.key === pdId.key)
+    fetch('https://blooming-river-69896.herokuapp.com/items')
+    .then(res => res.json())
+    .then(data => {
+      const food = data.filter(item => item.key === pdId.key)
     setProduct(food[0])
+    })
   },[pdId])
 
   // onchange handler
@@ -21,12 +24,8 @@ const ItemDetails = (props) => {
       setQuantity(e.target.value)
     }
   }
-
-  // console.log(product);
   
   const cartHandler = item => {
-    // console.log(id);
-    
     addToCart({...item, quantity})
     props.history.push('/cart')
   }
@@ -37,8 +36,7 @@ const ItemDetails = (props) => {
     } else {
       setQuantity(quantity-quan)
     }
-  }
-  // console.log(product.title);  
+  } 
 
   return (
     <>
@@ -86,7 +84,7 @@ const ItemDetails = (props) => {
     </section>
   )
     : (
-      <div className="container  not-found-aria">
+      <div className="container  not-found-area">
         <div className="row ">
           <div className="col not-found-content text-center">
             <h1>Invalid Product data</h1>

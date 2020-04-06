@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useContext } from 'react';
-import data from '../../Data/Data';
 import './Menu.css'
 import Item from '../Item/Item';
 import check from '../../images/ICON/Path 1.png'
@@ -30,8 +29,13 @@ const Menu = (props) => {
     const [items, setItems] = useState([])
 
     useEffect(() => {
-        const item = data.filter(item => item.category === selectedItem)
-        setItems(item)
+        fetch('https://blooming-river-69896.herokuapp.com/items')
+        .then(res => res.json())
+        .then(data =>{
+            
+            const item = data.filter(item => item.category === selectedItem)
+            setItems(item)
+        })
     }, [selectedItem])
 
     // conditionally set data when click catagories
@@ -83,7 +87,7 @@ const Menu = (props) => {
                 <div className="row food-items">
                     {items.map(item => <Item key={item.key} item={item} />)}
                     <div className="w-100"></div>
-                    <div className="checkout-btn-aria m-auto">
+                    <div className="checkout-btn-area m-auto">
                     <button 
                     onClick={()=>props.history.push('/cart')}
                     className={disabled ? 'btn disabled my-4 text-center text-capitalize' :'btn checkout-btn  my-4 text-center text-capitalize' } 

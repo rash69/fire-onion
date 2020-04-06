@@ -22,7 +22,7 @@ import dinner6 from './../images/Dinner/dinner6.png';
 
 
 
-const data =[
+const fake_data =[
     {
         'id': '1',
         'recipe_name': 'Bagel and cream cheese',
@@ -209,4 +209,4 @@ const data =[
 
 
 
-export default data;
+export default fake_data;
